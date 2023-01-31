@@ -1,3 +1,5 @@
+import displayInHtml from "./displayInHtml";
+
 const scoreName = document.querySelector('#name');
 const score = document.querySelector('#score');
 
@@ -13,3 +15,5 @@ const addNewScore = ()=>{
     const newScore = new CreateScore(scoreName.value,score.value);
     displayInHtml(newScore);
 }
+
+export default addNewScore;

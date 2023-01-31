@@ -7,3 +7,5 @@ const displayInHtml = (newScore) => {
 
     table.appendChild(tableRow);
 }
+
+export default displayInHtml;

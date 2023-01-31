@@ -1,3 +1,11 @@
 import './style.css';
-import addNewScore from './modules/addNewScore';
+import addNewScore,{form} from './modules/addNewScore';
+
+
+form.addEventListener('submit',(event)=>{
+  event.preventDefault();
+  addNewScore();
+
+})
+
 

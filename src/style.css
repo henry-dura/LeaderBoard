@@ -16,6 +16,7 @@ main {
   padding: 12px;
   margin: 0 auto;
 }
+
 .scores-container {
   flex-basis: 40%;
 }
@@ -28,18 +29,20 @@ main {
 }
 
 table {
-    margin-top: 30px;
-    border-collapse: collapse;
-    width: 100%;
-    border: 2px solid black;
-    font-size: 1.2rem;
-  }
+  margin-top: 30px;
+  border-collapse: collapse;
+  width: 100%;
+  border: 2px solid black;
+  font-size: 1.2rem;
+}
+
 tr:nth-child(even) {
-    background-color: #ddd;
-  }
-  td{
-    padding: 5px 12px;
-  }
+  background-color: #ddd;
+}
+
+td {
+  padding: 5px 12px;
+}
 
 form {
   display: flex;
@@ -52,12 +55,15 @@ input {
   width: 100%;
   font-size: 1.2rem;
 }
+
 button {
   padding: 5px 12px;
 }
+
 button[type="Submit"] {
   align-self: flex-end;
 }
+
 footer {
   position: fixed;
   bottom: 0;

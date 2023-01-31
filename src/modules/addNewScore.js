@@ -18,9 +18,12 @@ class CreateScore{
 
 
 const addNewScore = ()=>{
-    const newScore = new CreateScore(scoreName.value,score.value);
-    displayInHtml(newScore);
-    CreateScore.clear();
+    if(scoreName.value && score.value){
+        const newScore = new CreateScore(scoreName.value,score.value);
+        displayInHtml(newScore);
+        CreateScore.clear();
+    }
+    
 }
 
 export default addNewScore;

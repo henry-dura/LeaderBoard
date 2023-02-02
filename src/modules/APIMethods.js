@@ -1,4 +1,4 @@
-const url = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/6KHqaMm0pTawWD2YainT/scores/';
+const url = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/SjEdYh0yO5VuWG6dws4E/scores/';
 
 const getData = async () => {
   const response = await fetch(url);

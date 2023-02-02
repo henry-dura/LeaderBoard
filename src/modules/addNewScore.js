@@ -10,17 +10,13 @@ class CreateScore {
     this.yourScore = yourScore;
   }
 
-  static clear() {
-    scoreName.value = '';
-    score.value = '';
-  }
 }
 
 const addNewScore = () => {
   if (scoreName.value && score.value >= 0) {
     const newScore = new CreateScore(scoreName.value, score.value);
     displayInHtml(newScore);
-    CreateScore.clear();
+    form.reset();
   }
 };
 

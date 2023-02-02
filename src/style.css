@@ -92,3 +92,19 @@ footer {
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   
 }
+
+.success{
+  color: green;
+}
+
+.failure{
+  color: red;
+}
+.failure,.success{
+  font-size: 1.3rem;
+  font-weight: 800;
+}
+
+.hide{
+  display: none;
+}

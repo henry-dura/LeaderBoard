@@ -1,9 +1,9 @@
-const table = document.querySelector('.scores-table');
+export const table = document.querySelector('.scores-table');
 
-const displayInHtml = (newScore) => {
+const displayInHtml = (data) => {
   const tableRow = document.createElement('tr');
   tableRow.innerHTML = `
-    <td>${newScore.yourName} : ${newScore.yourScore}</td>`;
+    <td>${data.user} : ${data.score}</td>`;
 
   table.appendChild(tableRow);
 };

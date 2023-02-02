@@ -85,7 +85,6 @@ Install this project with:
 ## 🔭 Future Features <a name="future-features"></a>
 
 
-- [ ] **[Make API calls]**
 - [ ] **[Make responsive]**
 - [ ] **[Add more styling]**
 

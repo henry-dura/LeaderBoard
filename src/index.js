@@ -4,10 +4,9 @@ import {getData,postData} from './modules/APIMethods';
 import displayInHtml,{table} from './modules/displayInHtml';
 const refresh = document.querySelector('#refresh');
 
-form.addEventListener('submit', async (event) => {
+form.addEventListener('submit', (event) => {
   event.preventDefault();
   addNewScore();
-  await postData()
 });
 
 refresh.addEventListener('click', async ()=>{

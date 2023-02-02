@@ -3,19 +3,21 @@ const url =
 
 const getData = async () => {
   const response = await fetch(url);
-  const data =  await response.json();
+  const data = await response.json();
   return data.result;
 };
 
-const postData = async () => {
+const postData = async (newScore) => {
   const response = await fetch(url, {
     method: "POST",
-    body: JSON.stringify({user : "Money", score: 253}),
+    body: JSON.stringify({ 
+        user: newScore.user, 
+        score: newScore.score 
+    }),
     headers: {
       "Content-type": "application/json; charset=UTF-8",
     },
   });
- 
 };
 
-export {getData,postData};
+export { getData, postData };

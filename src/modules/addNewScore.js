@@ -1,4 +1,4 @@
-import { postData } from './APIMethods.js';
+import postData from './API_PostData.js';
 
 const userName = document.querySelector('#name');
 const score = document.querySelector('#score');

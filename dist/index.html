@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Webpack Exercise</title>
+    <title>Leaderboard</title>
 <script defer src="main.js"></script></head>
 <body>
     <header>
@@ -14,17 +14,19 @@
         <div class="scores-container">
             <div class="scores-heading">
                 <h2>Recent Scores</h2>
-                <button>Refresh</button>
+                <button id="refresh">Refresh</button>
             </div>
             <table class="scores-table"></table>
         </div>
         <form >
             <h2>Add Your Score</h2>
+            <p class="success hide"> Score Added successfully</p>
+            <p class="failure hide" > Score not Submited, Kindly try again</p>
             <input type="text" name="name" id="name" placeholder="Your name">
             <input type="text" name="score" id="score" placeholder="Your score">
             <button type="submit">Submit</button>
         </form>
     </main>
-    <footer></footer>
+    <footer><p>Copyright @ Henry Ugwu</p> </footer>
 </body>
 </html>

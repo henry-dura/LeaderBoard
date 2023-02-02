@@ -1,5 +1,3 @@
-import displayInHtml from './displayInHtml.js';
-
 import { postData } from './APIMethods.js';
 
 const userName = document.querySelector('#name');
@@ -11,7 +9,6 @@ class CreateScore {
     this.user = user;
     this.score = score;
   }
-
 }
 
 const addNewScore = () => {

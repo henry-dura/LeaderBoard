@@ -1,7 +1,8 @@
 import './style.css';
 import addNewScore, { form } from './modules/addNewScore.js';
-import {getData,postData} from './modules/APIMethods';
-import displayInHtml,{table} from './modules/displayInHtml';
+import { getData } from './modules/APIMethods.js';
+import displayInHtml, { table } from './modules/displayInHtml.js';
+
 const refresh = document.querySelector('#refresh');
 
 form.addEventListener('submit', (event) => {
@@ -9,12 +10,11 @@ form.addEventListener('submit', (event) => {
   addNewScore();
 });
 
-refresh.addEventListener('click', async ()=>{
+refresh.addEventListener('click', async () => {
   let dataList = await getData();
   table.innerHTML = '';
-  dataList = dataList.sort((a,b)=> b.score - a.score);
-  dataList.forEach(data => {
+  dataList = dataList.sort((a, b) => b.score - a.score);
+  dataList.forEach((data) => {
     displayInHtml(data);
   });
-
 });
